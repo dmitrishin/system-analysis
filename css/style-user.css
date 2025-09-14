@@ -1,69 +1,51 @@
 /* Стилизуем текст меню вместо кнопки */
 .menu-text {
-    cursor: pointer;
-    font-family: 'Arial', sans-serif; /* Основной шрифт для текста */
-    font-size: 14px; /* Размер текста абзацев */
-    color: #000;
-    text-decoration: none;
-}
-
-.menu-text:hover {
-    text-decoration: underline;
-}
-
-/* Стили для абзацев */
-p {
-    font-family: 'Arial', sans-serif; /* Основной шрифт для текста */
-    font-size: 14px; /* Размер текста абзацев */
-}
-
-/* Убираем синий фон при открытии и фокусе */
-.accordion-button:focus,
-.accordion-button:not(.collapsed) {
-    box-shadow: none;
-    background-color: transparent; /* или любой другой цвет */
-    border-color: transparent;
-}
-
-/* Текст в аккордионе */
-.accordion-text-user {
-    font-family: 'Arial', sans-serif; /* Основной шрифт для текста */
-    font-size: 14px; /* Размер текста абзацев */
-    color: #000;
-}
-
-.octicon {
-    display: inline-block;
-    vertical-align: text-top;
-    fill: currentColor;
-}
-
-
-.gist .blob-code {
-    white-space: pre-wrap !important; /* Перенос строк */
-    word-break: break-word; /* Разбивка длинных слов */
-}
-
-.text-menu {
-    font-family: 'Arial', sans-serif; /* Основной шрифт для текста */
-    font-size: 15px; /* Размер текста абзацев */
-}
-
-
-/* Подчёркивание в подпунктах меню Offcanvas */
-#offcanvasNavbar .dropdown-menu .dropdown-item {
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
   text-decoration: none;
 }
-
-#offcanvasNavbar .dropdown-menu .dropdown-item:hover,
-#offcanvasNavbar .dropdown-menu .dropdown-item:focus {
+.menu-text:hover,
+.menu-text:focus-visible {
   text-decoration: underline;
-  text-underline-offset: .2rem;   /* как link-offset-2 */
-  text-decoration-thickness: 1px; /* тонкое подчёркивание */
+  text-underline-offset: .2rem;
+  text-decoration-thickness: 1px;
 }
-/* Подменю Offcanvas: только подчёркивание, без заливки и смены цвета */
-#offcanvasNavbar .dropdown-menu{
-  /* фиксируем поведение Bootstrap-переменными */
+
+/* Параграфы */
+p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Аккордеон: без синего фона и тени */
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Текст в аккордеоне */
+.accordion-text-user {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+}
+
+/* Вспомогательное */
+.octicon { display: inline-block; vertical-align: text-top; fill: currentColor; }
+.gist .blob-code { white-space: pre-wrap !important; word-break: break-word; }
+
+.text-menu {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* ===== Offcanvas → подменю: только подчёркивание, без заливки и без смены цвета ===== */
+#offcanvasNavbar .dropdown-menu {
+  /* блокируем стандартные цвета Bootstrap */
   --bs-dropdown-link-color: #000;
   --bs-dropdown-link-hover-color: #000;
   --bs-dropdown-link-hover-bg: transparent;
@@ -71,25 +53,33 @@ p {
   --bs-dropdown-link-active-bg: transparent;
 }
 
-#offcanvasNavbar .dropdown-menu .dropdown-item{
+#offcanvasNavbar .dropdown-menu .dropdown-item {
+  color: #000;
   text-decoration: none;
-  color: #000;                 /* на всякий случай, закрепляем цвет */
+  background-color: transparent;
 }
 
 #offcanvasNavbar .dropdown-menu .dropdown-item:hover,
-#offcanvasNavbar .dropdown-menu .dropdown-item:focus{
+#offcanvasNavbar .dropdown-menu .dropdown-item:focus,
+#offcanvasNavbar .dropdown-menu .dropdown-item:active,
+#offcanvasNavbar .dropdown-menu .dropdown-item.active,
+#offcanvasNavbar .dropdown-menu .dropdown-item:focus-visible {
+  color: #000;
+  background-color: transparent;
   text-decoration: underline;
   text-underline-offset: .2rem;
   text-decoration-thickness: 1px;
-  background-color: transparent;
-  color: #000;
 }
 
-#offcanvasNavbar .dropdown-menu .dropdown-item:active,
-#offcanvasNavbar .dropdown-menu .dropdown-item.active{
-  background-color: transparent; /* убираем синюю/серую заливку */
+/* ===== Ссылки в тексте (по желанию) =====
+   Используй класс .text-link на тексте статьи: <a class="text-link" ...> */
+a.text-link {
   color: #000;
+  text-decoration: none;
+}
+a.text-link:hover,
+a.text-link:focus-visible {
   text-decoration: underline;
+  text-underline-offset: .2rem;
+  text-decoration-thickness: 1px;
 }
-
-/* Стили для ссылок в тексте */
