@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
 
     <title>Системный анализ — Моделирование</title>
 
@@ -33,10 +35,12 @@
       Меню
     </span>
 
-        <div class="offcanvas offcanvas-end rounded-start-3" tabindex="-1" id="offcanvasNavbar"
+        <div class="offcanvas offcanvas-end rounded-start-3"
+             tabindex="-1"
+             id="offcanvasNavbar"
              aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                <h5 class="offcanvas-title visually-hidden" id="offcanvasNavbarLabel">Меню</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
             </div>
 
@@ -127,7 +131,7 @@
                                 <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
                                    href="#"> Книги</a></li>
                         </ul>
-                    </li> <!-- фикс: добавлен закрывающий </li> -->
+                    </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-menu" href="#" role="button" data-bs-toggle="dropdown"
@@ -216,6 +220,7 @@
         </div>
     </div>
 </nav>
+
 
 <div class="container mb-1 p-1 text-secondary">
     <hr>
