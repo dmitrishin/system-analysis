@@ -22,277 +22,295 @@
 </head>
 
 <body>
+<!-- Панель навигации с Offcanvas  -->
+<header>
+    <nav class="navbar mt-2">
+        <div class="container">
+            <span class="navbar-brand visually-hidden">systems-analysis.ru</span>
 
-<!-- Панель навигации с Offcanvas и фиксированной шириной -->
-<nav class="navbar mt-2">
-    <div class="container">
-        <span class="navbar-brand visually-hidden">systems-analysis.ru</span>
-
-        <span class="menu-text ms-auto"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar">
+            <span class="menu-text ms-auto"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar">
       Меню
     </span>
 
-        <div class="offcanvas offcanvas-end rounded-start-3"
-             tabindex="-1"
-             id="offcanvasNavbar"
-             aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title visually-hidden" id="offcanvasNavbarLabel">Меню</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
-            </div>
+            <div class="offcanvas offcanvas-end rounded-start-3"
+                 tabindex="-1"
+                 id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title visually-hidden" id="offcanvasNavbarLabel">Меню</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+                </div>
 
-            <div class="offcanvas-body ps-4">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active text-menu" aria-current="page" href="#">
-                            <i class="bi bi-house me-1"></i> Главная страница
-                        </a>
-                    </li>
+                <div class="offcanvas-body ps-4">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-menu" aria-current="page" href="#">
+                                <i class="bi bi-house me-1"></i> Главная страница
+                            </a>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-menu" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="bi bi-box me-1"></i> Системный анализ
-                        </a>
-                        <ul class="dropdown-menu text-menu">
-                            <li>
-                                <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Системный анализ</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Исследование операций</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Моделирование</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Теория принятия решений</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Системная инженерия</a></li>
-                            <li>
-                                <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Книги</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-menu" href="#" role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="bi bi-box me-1"></i> Системный анализ
+                            </a>
+                            <ul class="dropdown-menu text-menu">
+                                <li>
+                                    <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Системный анализ</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Исследование операций</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Моделирование</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Теория принятия решений</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Системная инженерия</a></li>
+                                <li>
+                                    <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Книги</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-menu" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="bi bi-braces me-1"></i> Исследование операций
-                        </a>
-                        <ul class="dropdown-menu text-menu">
-                            <li>
-                                <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Исследование операций</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Исследование операций</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Моделирование</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Теория принятия решений</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Системная инженерия</a></li>
-                            <li>
-                                <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Книги</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-menu" href="#" role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="bi bi-braces me-1"></i> Исследование операций
+                            </a>
+                            <ul class="dropdown-menu text-menu">
+                                <li>
+                                    <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Исследование операций</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Исследование операций</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Моделирование</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Теория принятия решений</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Системная инженерия</a></li>
+                                <li>
+                                    <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Книги</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-menu" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="bi bi-bounding-box me-1"></i> Моделирование
-                        </a>
-                        <ul class="dropdown-menu text-menu">
-                            <li>
-                                <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Моделирование</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Исследование операций</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Моделирование</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Теория принятия решений</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Системная инженерия</a></li>
-                            <li>
-                                <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Книги</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-menu" href="#" role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="bi bi-bounding-box me-1"></i> Моделирование
+                            </a>
+                            <ul class="dropdown-menu text-menu">
+                                <li>
+                                    <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Моделирование</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Исследование операций</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Моделирование</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Теория принятия решений</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Системная инженерия</a></li>
+                                <li>
+                                    <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Книги</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-menu" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="bi bi-dice-5 me-1"></i> Теория принятия решений
-                        </a>
-                        <ul class="dropdown-menu text-menu me-2">
-                            <li>
-                                <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Теория принятия решений</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Наука о данных</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Статистический анализ</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Машинное обучение</a></li>
-                            <li>
-                                <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Глубокое обучение</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-menu" href="#" role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="bi bi-dice-5 me-1"></i> Теория принятия решений
+                            </a>
+                            <ul class="dropdown-menu text-menu me-2">
+                                <li>
+                                    <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Теория принятия решений</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Наука о данных</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Статистический анализ</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Машинное обучение</a></li>
+                                <li>
+                                    <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Глубокое обучение</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-menu" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="bi bi-cpu me-1"></i> Большие языковые модели
-                        </a>
-                        <ul class="dropdown-menu text-menu me-2">
-                            <li>
-                                <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Большие языковые модели</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Архитектуры</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Обучение моделей</a></li>
-                            <li>
-                                <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Оценка моделей</a></li>
-                            <li>
-                                <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Модели LLM</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-menu" href="#" role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="bi bi-cpu me-1"></i> Большие языковые модели
+                            </a>
+                            <ul class="dropdown-menu text-menu me-2">
+                                <li>
+                                    <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Большие языковые модели</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Архитектуры</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Обучение моделей</a></li>
+                                <li>
+                                    <a class="dropdown-item link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Оценка моделей</a></li>
+                                <li>
+                                    <a class="dropdown-item mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Модели LLM</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-menu" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            <i class="bi bi-book me-2"></i> Литература
-                        </a>
-                        <ul class="dropdown-menu text-menu me-2">
-                            <li>
-                                <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#">Книги по системному анализу</a></li>
-                            <li>
-                                <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Книги по исследованию операций</a></li>
-                            <li>
-                                <a class="dropdown-item mt-2 mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
-                                   href="#"> Книги на System Wiki</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-menu" href="#" role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <i class="bi bi-book me-2"></i> Литература
+                            </a>
+                            <ul class="dropdown-menu text-menu me-2">
+                                <li>
+                                    <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#">Книги по системному анализу</a></li>
+                                <li>
+                                    <a class="dropdown-item mt-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Книги по исследованию операций</a></li>
+                                <li>
+                                    <a class="dropdown-item mt-2 mb-2 link-offset-2 link-underline link-underline-opacity-0 link-underline-opacity-100-hover"
+                                       href="#"> Книги на System Wiki</a></li>
+                            </ul>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link text-menu" href="#">
-                            <i class="bi bi-map me-1"></i> Карта сайта
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-menu" href="#">
-                            <i class="bi bi-wikipedia me-1"></i> System Wiki
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-menu" href="https://t.me/systems_analysis_ru" target="_blank"
-                           rel="noopener noreferrer">
-                            <i class="bi bi-send me-1"></i> Telegram
-                        </a>
-                    </li>
-                </ul>
+                        <li class="nav-item">
+                            <a class="nav-link text-menu" href="#">
+                                <i class="bi bi-map me-1"></i> Карта сайта
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-menu" href="#">
+                                <i class="bi bi-wikipedia me-1"></i> System Wiki
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-menu" href="https://t.me/systems_analysis_ru" target="_blank"
+                               rel="noopener noreferrer">
+                                <i class="bi bi-send me-1"></i> Telegram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
 
-
+<!-- Разделитель -->
 <div class="container mb-1 p-1 text-secondary">
     <hr>
 </div>
-<div class="container my-5 p-3">
-</div>
 
+<!-- Отступ -->
+<div class="container my-5 p-3"></div>
+
+<!-- Main content  -->
 <div class="container mt-5">
     <div class="row">
         <div class="col-xl-8 col-lg-8 col-md-12">
-            <h1 class="h3">Моделирование</h1>
-            <p class="text-dark mt-3">Моделирование — метод познания окружающего мира, который можно отнести к
-                общенаучным методам, применяемым как на эмпирическом, так и на теоретическом уровне познания. При
-                построении и исследовании модели могут применяться практически все остальные методы познания.
+            <main id="main-content">
+                <h1 class="h3">Моделирование</h1>
+                <p class="text-dark mt-3">Моделирование — метод познания окружающего мира, который можно отнести к
+                    общенаучным методам, применяемым как на эмпирическом, так и на теоретическом уровне познания. При
+                    построении и исследовании модели могут применяться практически все остальные методы познания.
 
-                Под моделью (от лат. modulus — мера, образец, норма) понимают такой материальный или мысленно
-                представляемый объект, который в процессе познания (изучения) замещает объект-оригинал, сохраняя
-                некоторые важные для данного исследования типичные его черты. Процесс построения и использования модели
-                называется моделированием</p>
+                    Под моделью (от лат. modulus — мера, образец, норма) понимают такой материальный или мысленно
+                    представляемый объект, который в процессе познания (изучения) замещает объект-оригинал, сохраняя
+                    некоторые важные для данного исследования типичные его черты. Процесс построения и использования
+                    модели
+                    называется моделированием</p>
 
-            <p> В системном анализе моделирование рассматривается как основной метод научного познания, связанный с
-                совершенствованием способов получения и фиксации информации об изучаемых объектах, а также с
-                приобретением новых знаний на основе модельных экспериментов. Сегодня большинство моделей
-                разрабатывается с использованием компьютерной техники и компьютерных технологий, такие модели
-                разрабатываться с помощью программ или сами могут выступать в качестве программы.</p>
+                <p> В системном анализе моделирование рассматривается как основной метод научного познания, связанный с
+                    совершенствованием способов получения и фиксации информации об изучаемых объектах, а также с
+                    приобретением новых знаний на основе модельных экспериментов. Сегодня большинство моделей
+                    разрабатывается с использованием компьютерной техники и компьютерных технологий, такие модели
+                    разрабатываться с помощью программ или сами могут выступать в качестве программы.</p>
 
-            <h5 class="h5 mt-5 mb-3">Системные проблемы </h5>
+                <h5 class="h5 mt-5 mb-3">Системные проблемы </h5>
 
-            <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
-                существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
-                следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его точки
-                зрения факторы. При построении модели исследователь всегда исходит из поставленных целей, учитывает
-                только наиболее существенные для их достижения факторы. Поэтому любая модель нетождественна
-                объекту-оригиналу и, следовательно, неполна, поскольку при ее построении исследователь учитывал лишь
-                важнейшие с его точки зрения факторы. </p>
+                <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
+                    существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
+                    следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его
+                    точки
+                    зрения факторы. При построении модели исследователь всегда исходит из поставленных целей, учитывает
+                    только наиболее существенные для их достижения факторы. Поэтому любая модель нетождественна
+                    объекту-оригиналу и, следовательно, неполна, поскольку при ее построении исследователь учитывал лишь
+                    важнейшие с его точки зрения факторы. </p>
 
-            <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
-                существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
-                следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его точки
-                зрения факторы.
-            </p>
+                <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
+                    существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
+                    следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его
+                    точки
+                    зрения факторы.
+                </p>
 
-            <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
-                существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
-                следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его точки
-                зрения факторы. При построении модели исследователь всегда исходит из поставленных целей, учитывает
-                только наиболее существенные для их достижения факторы. Поэтому любая модель нетождественна
-                объекту-оригиналу и, следовательно, неполна, поскольку при ее построении исследователь учитывал лишь
-                важнейшие с его точки зрения факторы. </p>
-            <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
-                существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
-                следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его точки
-                зрения факторы. </p>
-            <br>
-            <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
-                существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
-                следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его точки
-                зрения факторы.
-            </p>
+                <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
+                    существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
+                    следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его
+                    точки
+                    зрения факторы. При построении модели исследователь всегда исходит из поставленных целей, учитывает
+                    только наиболее существенные для их достижения факторы. Поэтому любая модель нетождественна
+                    объекту-оригиналу и, следовательно, неполна, поскольку при ее построении исследователь учитывал лишь
+                    важнейшие с его точки зрения факторы. </p>
+                <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
+                    существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
+                    следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его
+                    точки
+                    зрения факторы. </p>
+                <br>
+                <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
+                    существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
+                    следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его
+                    точки
+                    зрения факторы.
+                </p>
 
-            <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
-                существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
-                следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его точки
-                зрения факторы. При построении модели исследователь всегда исходит из поставленных целей, учитывает
-                только наиболее существенные для их достижения факторы. Поэтому любая модель нетождественна
-                объекту-оригиналу и, следовательно, неполна, поскольку при ее построении исследователь учитывал лишь
-                важнейшие с его точки зрения факторы. </p>
-            <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
-                существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
-                следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его точки
-                зрения факторы. </p>
-
+                <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
+                    существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
+                    следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его
+                    точки
+                    зрения факторы. При построении модели исследователь всегда исходит из поставленных целей, учитывает
+                    только наиболее существенные для их достижения факторы. Поэтому любая модель нетождественна
+                    объекту-оригиналу и, следовательно, неполна, поскольку при ее построении исследователь учитывал лишь
+                    важнейшие с его точки зрения факторы. </p>
+                <p> При построении модели исследователь всегда исходит из поставленных целей, учитывает только наиболее
+                    существенные для их достижения факторы. Поэтому любая модель нетождественна объекту-оригиналу и,
+                    следовательно, неполна, поскольку при ее построении исследователь учитывал лишь важнейшие с его
+                    точки
+                    зрения факторы. </p>
+            </main>
         </div>
 
         <!-- Right (Sidebar) -->
@@ -341,6 +359,50 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Разделы страницы (отдельный блок) -->
+            <nav class="mt-4" aria-label="Ссылки разделов">
+                <a class="d-inline-flex align-items-center gap-1 link-dark lh-sm
+            link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover menu-text"
+                   data-bs-toggle="collapse"
+                   href="#sidebarSubpages"
+                   role="button"
+                   aria-expanded="false"
+                   aria-controls="sidebarSubpages">
+                    Разделы страницы
+                    <i class="bi bi-chevron-down small"></i>
+                </a>
+
+                <ul id="sidebarSubpages"
+                    class="collapse list-unstyled vstack gap-1 mt-2 mb-0"
+                    aria-label="Ссылки раздела">
+                    <li>
+                        <a href="#"
+                           class="link-dark lh-sm link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover menu-text">
+                            Введение
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="link-dark lh-sm link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover menu-text">
+                            Методы моделирования
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="link-dark lh-sm link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover menu-text">
+                            Кейсы и примеры
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                           class="link-dark lh-sm link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover menu-text">
+                            Ресурсы
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
 
     </div>
