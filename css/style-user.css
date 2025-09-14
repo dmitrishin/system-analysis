@@ -1,0 +1,50 @@
+/* Стилизуем текст меню вместо кнопки */
+.menu-text {
+    cursor: pointer;
+    font-family: 'Arial', sans-serif; /* Основной шрифт для текста */
+    font-size: 14px; /* Размер текста абзацев */
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-text:hover {
+    text-decoration: underline;
+}
+
+/* Стили для абзацев */
+p {
+    font-family: 'Arial', sans-serif; /* Основной шрифт для текста */
+    font-size: 14px; /* Размер текста абзацев */
+}
+
+/* Убираем синий фон при открытии и фокусе */
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: transparent; /* или любой другой цвет */
+    border-color: transparent;
+}
+
+/* Текст в аккордионе */
+.accordion-text-user {
+    font-family: 'Arial', sans-serif; /* Основной шрифт для текста */
+    font-size: 14px; /* Размер текста абзацев */
+    color: #000;
+}
+
+.octicon {
+    display: inline-block;
+    vertical-align: text-top;
+    fill: currentColor;
+}
+
+
+.gist .blob-code {
+    white-space: pre-wrap !important; /* Перенос строк */
+    word-break: break-word; /* Разбивка длинных слов */
+}
+
+.text-menu {
+    font-family: 'Arial', sans-serif; /* Основной шрифт для текста */
+    font-size: 15px; /* Размер текста абзацев */
+}
