@@ -166,3 +166,13 @@ footer .text-body-secondary { color: #1A1E21 !important; }
 #offcanvasNavbar .nav-item.dropdown > .nav-link[aria-expanded="true"]:active {
   text-decoration: none;
 }
+
+/* Offcanvas backdrop: сделать затемнение почти прозрачным */
+.offcanvas-backdrop {
+  --bs-backdrop-bg: #000;
+  --bs-backdrop-opacity: .07; /* было .08 */
+}
+
+/* Фолбэк на случай, если переменная не подхватится */
+.offcanvas-backdrop.show { opacity: .07; } /* было .08 */
+
